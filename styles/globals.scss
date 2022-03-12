@@ -1,0 +1,27 @@
+html,
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+  --light-green: #7ed56f;
+  --medium-green: #55c57a;
+  --dark-green: #28b485;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/*
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
