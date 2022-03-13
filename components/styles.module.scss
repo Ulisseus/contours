@@ -2,8 +2,8 @@
   min-height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)
+      rgba(var(--primary-light-rgb), 0.5),
+      rgba(var(--primary-dark-rgb), -0.3)
     ),
     url("../public/hero.jpg");
   background-size: cover;
