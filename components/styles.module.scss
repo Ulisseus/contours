@@ -14,12 +14,12 @@
 
 .logoBox {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .titleBox {
@@ -37,9 +37,9 @@
 }
 .titleMain {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
   animation: moveInLeft 1s ease-in;
   @media (prefers-reduced-motion) {
     animation: none;
@@ -47,11 +47,11 @@
 }
 .titleSub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 900;
-  letter-spacing: 17.5px;
+  letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-in;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   @media (prefers-reduced-motion) {
     animation: none;
   }
@@ -60,11 +60,11 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -75,11 +75,11 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -91,8 +91,8 @@
 .button {
   text-transform: uppercase;
   background-color: var(--bg-color);
-  padding: 15px 40px;
-  border-radius: 100px;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
   display: inline-block;
   margin: auto;
   transition: all 0.2s;
@@ -116,7 +116,7 @@
   display: inline-block;
   width: 100%;
   height: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   background-color: var(--bg-color);
   position: absolute;
   top: 0;
@@ -133,7 +133,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(2rem);
   }
   100% {
     opacity: 1;
