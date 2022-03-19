@@ -12,6 +12,9 @@ const Header: React.FC = () => {
           <span className={styles.titleMain}>Outdoors</span>
           <span className={styles.titleSub}>is where the life happens</span>
         </h1>
+        <a className={styles.button} href="#">
+          Discover our tours
+        </a>
       </div>
     </header>
   );

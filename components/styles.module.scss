@@ -27,12 +27,12 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .title {
   color: white;
   text-transform: uppercase;
-  text-align: center;
   backface-visibility: hidden;
 }
 .titleMain {
@@ -51,6 +51,7 @@
   font-weight: 900;
   letter-spacing: 17.5px;
   animation: moveInRight 1s ease-in;
+  margin-bottom: 40px;
   @media (prefers-reduced-motion) {
     animation: none;
   }
@@ -85,4 +86,24 @@
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: white;
+  padding: 15px 40px;
+  border-radius: 100px;
+  display: inline-block;
+  margin: auto;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
