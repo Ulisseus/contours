@@ -11,8 +11,10 @@ body {
   --primary-mid-rgb: 85, 197, 122;
   --primary-dark: rgb(40, 180, 133);
   --primary-dark-rgb: 40, 180, 133;
+  --bg-color: white;
   --text-color: #777;
   color: var(--text-color);
+  background-color: var(--bg-color);
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -23,7 +25,7 @@ body {
     --primary-dark: rgb(18, 126, 108);
     --primary-dark-rgb: 18, 126, 108;
     --text-color: white;
-    background-color: #777;
+    --bg-color: #777;
   }
 }
 
