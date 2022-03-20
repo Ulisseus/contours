@@ -10,50 +10,95 @@
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
-}
-
-.logoBox {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.logo {
-  height: 3.5rem;
-}
-
-.titleBox {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.title {
-  color: white;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-}
-.titleMain {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation: moveInLeft 1s ease-in;
-  @media (prefers-reduced-motion) {
-    animation: none;
+  .logoBox {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    .logo {
+      height: 3.5rem;
+    }
+  }
+  .titleBox {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .title {
+      color: white;
+      text-transform: uppercase;
+      backface-visibility: hidden;
+      .titleMain {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation: moveInLeft 1s ease-in;
+        @media (prefers-reduced-motion) {
+          animation: none;
+        }
+      }
+      .titleSub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 900;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-in;
+        margin-bottom: 4rem;
+        @media (prefers-reduced-motion) {
+          animation: none;
+        }
+      }
+    }
   }
 }
-.titleSub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 900;
-  letter-spacing: 1.75rem;
-  animation: moveInRight 1s ease-in;
-  margin-bottom: 4rem;
-  @media (prefers-reduced-motion) {
-    animation: none;
+.button {
+  text-transform: uppercase;
+  background-color: var(--bg-color);
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  display: inline-block;
+  margin: auto;
+  transition: all 0.2s;
+  position: relative;
+  animation: moveInBottom 1s ease-in 0.75s;
+  animation-fill-mode: backwards;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: 0;
   }
 }
 
@@ -85,58 +130,5 @@
   100% {
     opacity: 1;
     transform: translate(0);
-  }
-}
-
-.button {
-  text-transform: uppercase;
-  background-color: var(--bg-color);
-  padding: 1.5rem 4rem;
-  border-radius: 10rem;
-  display: inline-block;
-  margin: auto;
-  transition: all 0.2s;
-  position: relative;
-  animation: moveInBottom 1s ease-in 0.75s;
-  animation-fill-mode: backwards;
-}
-
-.button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.button:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.button::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  border-radius: 10rem;
-  background-color: var(--bg-color);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-
-.button:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(2rem);
-  }
-  100% {
-    opacity: 1;
-    transform: 0;
   }
 }
