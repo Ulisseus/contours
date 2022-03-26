@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import { Button } from "../Button";
 
 const Header: React.FC = () => {
   return (
@@ -12,9 +13,7 @@ const Header: React.FC = () => {
           <span className={styles.headingMain}>Outdoors</span>
           <span className={styles.headingSub}>is where the life happens</span>
         </h1>
-        <a className={styles.button} href="#">
-          Discover our tours
-        </a>
+        <Button text="Discover our tours" />
       </div>
     </header>
   );
