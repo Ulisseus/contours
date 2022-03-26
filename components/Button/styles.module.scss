@@ -1,3 +1,4 @@
+@import "../../styles/global/animations";
 .button {
   text-transform: uppercase;
   background-color: var(--bg-color);
@@ -7,6 +8,9 @@
   margin: auto;
   transition: all 0.2s;
   position: relative;
+}
+
+.animation {
   animation: moveInBottom 1s ease-in 0.75s;
   animation-fill-mode: backwards;
   &:hover {
