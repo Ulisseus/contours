@@ -1,0 +1,21 @@
+@mixin whiteThemeColors {
+  --primary-light: rgb(126, 213, 111);
+  --primary-light-rgb: 126, 213, 111;
+  --primary-mid: rgb(85, 197, 122);
+  --primary-mid-rgb: 85, 197, 122;
+  --primary-dark: rgb(40, 180, 133);
+  --primary-dark-rgb: 40, 180, 133;
+  --bg-color: white;
+  --text-color: #777;
+}
+
+@mixin darkThemeColors {
+  --primary-light: rgb(18, 151, 62);
+  --primary-light-rgb: 18, 151, 62;
+  --primary-mid: rgb(20, 148, 110);
+  --primary-mid-rgb: 20, 148, 110;
+  --primary-dark: rgb(18, 126, 108);
+  --primary-dark-rgb: 18, 126, 108;
+  --text-color: white;
+  --bg-color: #777;
+}

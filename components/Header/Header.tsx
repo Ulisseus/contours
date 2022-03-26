@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import { Button } from "../Button";
 
 const Header: React.FC = () => {
   return (
@@ -8,13 +9,11 @@ const Header: React.FC = () => {
         <img src="/logo-white.png" alt="logo" className={styles.logo} />
       </div>
       <div className={styles.titleBox}>
-        <h1 className={styles.title}>
-          <span className={styles.titleMain}>Outdoors</span>
-          <span className={styles.titleSub}>is where the life happens</span>
+        <h1 className={styles.heading}>
+          <span className={styles.headingMain}>Outdoors</span>
+          <span className={styles.headingSub}>is where the life happens</span>
         </h1>
-        <a className={styles.button} href="#">
-          Discover our tours
-        </a>
+        <Button text="Discover our tours" />
       </div>
     </header>
   );
