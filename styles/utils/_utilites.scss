@@ -2,17 +2,22 @@
   text-align: center;
 }
 
-.mb-8 {
+.mb-big {
   margin-bottom: 8rem;
+}
+.mb-mid {
+  margin-bottom: 4rem;
+}
+.mb-small {
+  margin-bottom: 1.5rem;
 }
 
 .d-flex {
   display: flex;
-  flex-basis: 0;
   & .col-1 {
-    flex-grow: 0.125;
+    flex: 0.125 0 0;
   }
   & .col-4 {
-    flex-grow: 0.5;
+    flex: 0.5 0 0;
   }
 }

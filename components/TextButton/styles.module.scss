@@ -1,0 +1,23 @@
+.button {
+  &:link,
+  &:visited {
+    font-size: var(--font-size-default);
+    color: var(--primary-light);
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid var(--primary-light);
+    border-radius: 3px;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0.2rem 1rem 1rem rgba(black, 0.2);
+  }
+  &:hover {
+    background-color: var(--primary-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+  }
+}
