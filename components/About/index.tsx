@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import cn from "classnames";
+import { TextButton } from "../TextButton";
 
 export const About: React.FC = () => {
   return (
@@ -37,6 +38,7 @@ export const About: React.FC = () => {
               Excepturi ipsa totam nemo eligendi? Animi laboriosam nihil
               molestias recusandae earum!
             </p>
+            <TextButton url="#" text="Learn more &#10132;" />
           </div>
           <div className="col-4">images</div>
         </div>
