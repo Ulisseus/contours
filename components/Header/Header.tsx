@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { Button } from "../Button";
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logoBox}>
@@ -18,5 +18,3 @@ const Header: React.FC = () => {
     </header>
   );
 };
-
-export default Header;

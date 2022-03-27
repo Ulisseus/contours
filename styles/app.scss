@@ -1,6 +1,8 @@
 @import "./global/typography";
 @import "./global/base";
 @import "./utils/mixins";
+@import "./utils/variables";
+@import "./utils/utilites";
 
 *,
 *::after,
@@ -17,13 +19,7 @@ html {
 
 body {
   padding: 3rem;
-  @include whiteThemeColors;
   color: var(--text-color);
   background-color: var(--bg-color);
   box-sizing: border-box;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    @include darkThemeColors;
-  }
 }
