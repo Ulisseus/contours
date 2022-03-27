@@ -1,0 +1,25 @@
+:root {
+  --primary-light: rgb(126, 213, 111);
+  --primary-light-rgb: 126, 213, 111;
+  --primary-mid: rgb(85, 197, 122);
+  --primary-mid-rgb: 85, 197, 122;
+  --primary-dark: rgb(40, 180, 133);
+  --primary-dark-rgb: 40, 180, 133;
+  --bg-color: white;
+  --text-color: #777;
+  --color-grey-light-1: #f7f7f7;
+  --black: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-light: rgb(18, 151, 62);
+    --primary-light-rgb: 18, 151, 62;
+    --primary-mid: rgb(20, 148, 110);
+    --primary-mid-rgb: 20, 148, 110;
+    --primary-dark: rgb(18, 126, 108);
+    --primary-dark-rgb: 18, 126, 108;
+    --text-color: white;
+    --bg-color: #777;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../components/Header/Header";
+import { Header } from "../components/Header/Header";
+import { About } from "../components/About";
 
 const DefaultPage: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const DefaultPage: React.FC = () => {
         <title>Contours</title>
       </Head>
       <Header />
+      <About />
     </>
   );
 };
