@@ -9,28 +9,28 @@ export const Features: React.FC = () => {
   return (
     <section className={styles.features}>
       <div className={`${styles.cardWrapper} d-flex`}>
-        <div className="col-2">
+        <div className="col-3">
           <FeatureBox
             title="Explore the world"
             iconName="icon-basic-world"
             description={lorem}
           />
         </div>
-        <div className="col-2">
+        <div className="col-3">
           <FeatureBox
             title="Meet the nature"
             iconName="icon-basic-compass"
             description={lorem}
           />
         </div>
-        <div className="col-2">
+        <div className="col-3">
           <FeatureBox
             title="Explore the world"
             iconName="icon-basic-map"
             description={lorem}
           />
         </div>
-        <div className="col-2">
+        <div className="col-3">
           <FeatureBox
             title="Live the life"
             iconName="icon-basic-heart"
