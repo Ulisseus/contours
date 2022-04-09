@@ -1,29 +1,38 @@
 import React from "react";
+import { MainButton } from "../MainButton";
 import styles from "./styles.module.scss";
 
 interface ICard {
   title: string;
+  variant: "Left" | "Center" | "Right";
+  listEntries: string[];
 }
 
-export const Card: React.FC<ICard> = ({ title }) => {
+export const Card: React.FC<ICard> = ({ title, variant, listEntries }) => {
   return (
     <div className={styles.card}>
       <div className={styles.sideFront}>
         <h4 className={styles.title}>
-          <span>{title}</span>
+          <span className={styles[`titleBackground${variant}`]}>{title}</span>
         </h4>
-        <div className={styles.imageOne}></div>
+        <div className={styles[`image${variant}`]}></div>
         <div className={styles.details}>
           <ul>
-            <li>3 day tour</li>
-            <li>Up to 15 people </li>
-            <li>2 tour guides</li>
-            <li>Sleep in cozy cottages</li>
-            <li>Difficulty:easy</li>
+            {listEntries.map((entry) => (
+              <li key={entry}>{entry}</li>
+            ))}
           </ul>
         </div>
       </div>
-      <div className={styles.sideBack}>Background</div>
+      <div className={styles[`sideBack${variant}`]}>
+        <div className={styles.sideBackContent}>
+          <div className={styles.priceWrapper}>
+            <p className={styles.priceOnly}>only</p>
+            <p className={styles.priceValue}>$2000</p>
+          </div>
+          <MainButton url="#" text="Buy now!" />
+        </div>
+      </div>
     </div>
   );
 };

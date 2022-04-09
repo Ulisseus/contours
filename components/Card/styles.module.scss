@@ -40,16 +40,66 @@
     rgba(var(--primary-light-rgb), 0.8),
     rgba(var(--primary-dark-rgb), 0.8)
   );
+  &Content {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 8rem;
+    .priceWrapper {
+      color: white;
+      .priceOnly {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+      .priceValue {
+        font-size: 6rem;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+.sideBackLeft {
+  composes: sideBack;
+  composes: side;
+  opacity: 0.85;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--secondary-light),
+    var(--secondary-dark)
+  );
+}
+.sideBackCenter {
+  composes: sideBack;
+  composes: side;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-light),
+    var(--primary-dark)
+  );
+}
+
+.sideBackRight {
+  composes: sideBack;
+  composes: side;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--tertiary-light),
+    var(--tertiary-dark)
+  );
 }
 
 .image {
   height: 23rem;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  opacity: 0.8;
+  background-blend-mode: screen;
 }
 
-//image paths are hardcoded, in a real project I would use any css in js solution and pass them as props
-.imageOne {
+//image urls are hardcoded, in a real project I would use any css-in-js solution
+.imageLeft {
   composes: image;
   background-image: url(../../public/nat-5.jpg),
     linear-gradient(
@@ -57,8 +107,22 @@
       var(--secondary-light),
       var(--secondary-dark)
     );
-  opacity: 0.8;
-  background-blend-mode: screen;
+}
+
+.imageCenter {
+  composes: image;
+  background-image: url(../../public/nat-6.jpg),
+    linear-gradient(to right bottom, var(--primary-light), var(--primary-dark));
+}
+
+.imageRight {
+  composes: image;
+  background-image: url(../../public/nat-7.jpg),
+    linear-gradient(
+      to right bottom,
+      var(--tertiary-light),
+      var(--tertiary-dark)
+    );
 }
 
 .title {
@@ -72,17 +136,38 @@
   z-index: 1;
   width: 55%;
   text-transform: uppercase;
-  span {
-    box-decoration-break: clone;
-    --webkit-box-decoration-break: clone;
-    padding: 1rem 1.75rem;
-    background-image: linear-gradient(
-      to right bottom,
-      var(--secondary-light),
-      var(--secondary-dark)
-    );
-    opacity: 0.85;
-  }
+}
+
+.titleBackground {
+  box-decoration-break: clone;
+  --webkit-box-decoration-break: clone;
+  padding: 1rem 1.75rem;
+  opacity: 0.85;
+}
+
+.titleBackgroundLeft {
+  composes: titleBackground;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--secondary-light),
+    var(--secondary-dark)
+  );
+}
+.titleBackgroundCenter {
+  composes: titleBackground;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-light),
+    var(--primary-dark)
+  );
+}
+.titleBackgroundRight {
+  composes: titleBackground;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--tertiary-light),
+    var(--tertiary-dark)
+  );
 }
 
 .details {

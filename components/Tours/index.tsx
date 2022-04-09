@@ -2,6 +2,30 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { Card } from "../Card";
 
+const LIST_ENTRIES = {
+  left: [
+    "3 days tour",
+    "Up to 15 people",
+    "2 tour guides",
+    "Sleep in cozy cottages",
+    "Difficulty: easy",
+  ],
+  center: [
+    "7 days tour",
+    "Up to 40 people",
+    "6 tour guides",
+    "Slepp in provided tents",
+    "Difficulty: medium",
+  ],
+  right: [
+    "5 days tour",
+    "Up to 15 people",
+    "3 tour guides",
+    "Sleep in provided tents",
+    "Difficulty hard",
+  ],
+};
+
 export const Tours: React.FC = () => {
   return (
     <section className={styles.wrapper}>
@@ -10,13 +34,25 @@ export const Tours: React.FC = () => {
       </div>
       <div className={`${styles.columnWrapper} d-flex`}>
         <div className="col-4">
-          <Card title="The sea explorer" />
+          <Card
+            title="The sea explorer"
+            variant="Left"
+            listEntries={LIST_ENTRIES.left}
+          />
         </div>
         <div className="col-4">
-          <Card title="Second" />
+          <Card
+            title="The forest hiker"
+            variant="Center"
+            listEntries={LIST_ENTRIES.center}
+          />
         </div>
         <div className="col-4">
-          <Card title="Third" />
+          <Card
+            title="The snow adventurer"
+            variant="Right"
+            listEntries={LIST_ENTRIES.right}
+          />
         </div>
       </div>
     </section>
