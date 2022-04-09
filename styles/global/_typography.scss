@@ -1,8 +1,9 @@
-.heading {
+@import "./animations";
+.h-1 {
   color: white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  &Main {
+  &_main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -12,7 +13,7 @@
       animation: none;
     }
   }
-  &Sub {
+  &_sub {
     display: block;
     font-size: 2rem;
     font-weight: 900;
@@ -25,13 +26,13 @@
   }
 }
 
-.headingSecondary {
+.h-2 {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   transition: all 0.2s;
   display: inline-block;
-  &.background {
+  &_background {
     background-image: linear-gradient(
       to left,
       var(--primary-light),
@@ -41,7 +42,7 @@
     color: transparent;
     letter-spacing: 2px;
   }
-  &.animated {
+  &_animated {
     &:hover {
       transform: skewY(2deg) skewX(15deg) scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.2);

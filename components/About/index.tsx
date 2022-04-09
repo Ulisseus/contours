@@ -9,18 +9,12 @@ export const About: React.FC = () => {
     <main>
       <section className={styles.about}>
         <div className="center-text mb-big">
-          <h2
-            className={cn(
-              styles.headingSecondary,
-              styles.background,
-              styles.animated
-            )}
-          >
+          <h2 className="h-2 h-2_background h-2_animated">
             Exciting tours for adventorous people
           </h2>
         </div>
-        <div className={cn("d-flex", styles.doubleCols)}>
-          <div className="col-4">
+        <div className={styles.wrapper}>
+          <div className="col-6">
             <div className="h-3 mb-small">
               You&apos;re going to fall in love with nature
             </div>
@@ -41,7 +35,7 @@ export const About: React.FC = () => {
             </p>
             <TextButton url="#" text="Learn more &#10132;" />
           </div>
-          <div className="col-4">
+          <div className="col-6">
             <Composition />
           </div>
         </div>
