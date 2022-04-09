@@ -54,9 +54,10 @@
   background-image: url(../../public/nat-5.jpg),
     linear-gradient(
       to right bottom,
-      rgba(var(--primary-light-rgb), 0.8),
-      rgba(var(--primary-dark-rgb), 0.8)
+      var(--secondary-light),
+      var(--secondary-dark)
     );
+  opacity: 0.8;
   background-blend-mode: screen;
 }
 
@@ -77,9 +78,10 @@
     padding: 1rem 1.75rem;
     background-image: linear-gradient(
       to right bottom,
-      rgba(var(--primary-light-rgb), 0.85),
-      rgba(var(--primary-dark-rgb), 0.85)
+      var(--secondary-light),
+      var(--secondary-dark)
     );
+    opacity: 0.85;
   }
 }
 
