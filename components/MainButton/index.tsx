@@ -6,16 +6,21 @@ interface IMainButtonProps {
   text: string;
   url: string;
   animated?: boolean;
+  primary?: boolean;
 }
 //todo combine two buttons in on component
 export const MainButton: React.FC<IMainButtonProps> = ({
   text,
   animated,
   url,
+  primary,
 }) => {
   return (
     <a
-      className={cn({ [styles.animation]: animated }, styles.button)}
+      className={cn(
+        { [styles.animation]: animated, [styles.primary]: primary },
+        styles.button
+      )}
       href={url}
     >
       {text}

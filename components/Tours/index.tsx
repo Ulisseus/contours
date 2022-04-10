@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { Card } from "../Card";
+import { MainButton } from "../MainButton";
 
 const LIST_ENTRIES = {
   left: [
@@ -54,6 +55,9 @@ export const Tours: React.FC = () => {
             listEntries={LIST_ENTRIES.right}
           />
         </div>
+      </div>
+      <div className="center-text mb-big mt-big">
+        <MainButton url="#" text="Discover all tours" primary />
       </div>
     </section>
   );

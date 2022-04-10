@@ -10,6 +10,11 @@
   position: relative;
 }
 
+.primary {
+  background-color: var(--primary-mid);
+  color: white;
+}
+
 .animation {
   animation: moveInBottom 1s ease-in 0.75s;
   animation-fill-mode: backwards;
