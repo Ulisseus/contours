@@ -1,5 +1,6 @@
 import React from "react";
 import { FormField } from "../FormField";
+import { RadioButton } from "../RadioButton";
 import styles from "./styles.module.scss";
 
 export const Booking: React.FC = () => {
@@ -26,7 +27,23 @@ export const Booking: React.FC = () => {
               required
               label="Email addres"
             />
-            <button type="submit">Sub</button>
+            <RadioButton
+              id="small"
+              required
+              label="Small tour groups"
+              placeholder="Small tour groups"
+              name="size"
+            />
+            <RadioButton
+              placeholder="Small tour groups"
+              id="large"
+              required
+              label="Large tour groups"
+              name="size"
+            />
+            <button type="submit" className={styles.button}>
+              Submit &#10132;
+            </button>
           </form>
         </div>
       </div>
