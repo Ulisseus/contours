@@ -1,5 +1,5 @@
 import React from "react";
-import { FeatureBox } from "../FeatureBox";
+import { FeatureBox } from "./_components/FeatureBox";
 import styles from "./styles.module.scss";
 
 const lorem =

@@ -1,5 +1,6 @@
 .wrapper {
   position: relative;
+  //width: 60rem;
   &:hover .photo:not(:hover) {
     transform: scale(0.9);
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { Card } from "../Card";
+import { Card } from "./_components/TourCard";
 import { MainButton } from "../MainButton";
 
 const LIST_ENTRIES = {

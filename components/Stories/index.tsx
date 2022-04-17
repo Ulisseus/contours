@@ -1,5 +1,5 @@
 import React from "react";
-import { StoryCard } from "../StoryCard";
+import { StoryCard } from "./_components/StoryCard";
 import { TextButton } from "../TextButton";
 import styles from "./styles.module.scss";
 
