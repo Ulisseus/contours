@@ -4,6 +4,8 @@ import { Header } from "../components/Header/Header";
 import { About } from "../components/About";
 import { Features } from "../components/Features";
 import { Tours } from "../components/Tours";
+import { Stories } from "../components/Stories";
+import { Booking } from "../components/Booking";
 
 const DefaultPage: React.FC = () => {
   return (
@@ -15,6 +17,8 @@ const DefaultPage: React.FC = () => {
       <About />
       <Features />
       <Tours />
+      <Stories />
+      <Booking />
     </>
   );
 };
