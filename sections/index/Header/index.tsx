@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { MainButton } from "../MainButton";
+import { MainButton } from "../../../components/MainButton";
 
 export const Header: React.FC = () => {
   return (

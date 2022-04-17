@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { Card } from "./_components/TourCard";
-import { MainButton } from "../MainButton";
+import { MainButton } from "../../../components/MainButton";
 
 const LIST_ENTRIES = {
   left: [
