@@ -44,7 +44,7 @@
   }
   &_animated {
     &:hover {
-      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      transform: skewX(-10deg) scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.2);
     }
   }

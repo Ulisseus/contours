@@ -6,6 +6,7 @@ import { Features } from "../components/Features";
 import { Tours } from "../components/Tours";
 import { Stories } from "../components/Stories";
 import { Booking } from "../components/Booking";
+import { Footer } from "../components/Footer";
 
 const DefaultPage: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const DefaultPage: React.FC = () => {
       <Tours />
       <Stories />
       <Booking />
+      <Footer />
     </>
   );
 };
