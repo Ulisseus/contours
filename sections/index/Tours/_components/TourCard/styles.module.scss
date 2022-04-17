@@ -101,7 +101,7 @@
 //image urls are hardcoded, in a real project I would use any css-in-js solution
 .imageLeft {
   composes: image;
-  background-image: url(../../public/nat-5.jpg),
+  background-image: url(../../../../../public/nat-5.jpg),
     linear-gradient(
       to right bottom,
       var(--secondary-light),
@@ -111,13 +111,13 @@
 
 .imageCenter {
   composes: image;
-  background-image: url(../../public/nat-6.jpg),
+  background-image: url(../../../../../public/nat-6.jpg),
     linear-gradient(to right bottom, var(--primary-light), var(--primary-dark));
 }
 
 .imageRight {
   composes: image;
-  background-image: url(../../public/nat-7.jpg),
+  background-image: url(../../../../../public/nat-7.jpg),
     linear-gradient(
       to right bottom,
       var(--tertiary-light),

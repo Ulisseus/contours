@@ -1,6 +1,6 @@
 import React from "react";
-import { StoryCard } from "../StoryCard";
-import { TextButton } from "../TextButton";
+import { StoryCard } from "./_components/StoryCard";
+import { TextButton } from "../../../components/TextButton";
 import styles from "./styles.module.scss";
 
 const LOREM = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fuga,

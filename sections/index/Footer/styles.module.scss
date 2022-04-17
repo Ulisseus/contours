@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--color-grey-dark-2);
+  padding: 7rem 0 10rem;
+  font-size: 1.4rem;
+
+  .info {
+    margin: auto;
+    width: 60%;
+  }
+
+  .logoBox {
+    text-align: center;
+    margin-bottom: 8rem;
+    .logo {
+      width: 15rem;
+      height: auto;
+    }
+  }
+
+  .navigation {
+    border-top: 1px solid var(--color-grey-light-2);
+    padding-top: 2rem;
+    margin-right: 3rem;
+    text-align: center;
+    .list {
+      list-style: none;
+    }
+  }
+
+  .copyright {
+    font-size: 1.6rem;
+    color: var(--color-grey-light-1);
+    border-top: 1px solid var(--color-grey-light-2);
+    padding-top: 2rem;
+    margin-left: 3rem;
+    text-align: center;
+  }
+}

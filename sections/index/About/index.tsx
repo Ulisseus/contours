@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import cn from "classnames";
-import { TextButton } from "../TextButton";
-import { Composition } from "../Composition";
+import { TextButton } from "../../../components/TextButton";
+import { Composition } from "./_components/AboutComposition";
 
 export const About: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ export const About: React.FC = () => {
             Exciting tours for adventorous people
           </h2>
         </div>
-        <div className={styles.wrapper}>
+        <div className={cn(styles.wrapper, "d-flex")}>
           <div className="col-6">
             <div className="h-3 mb-small">
               You&apos;re going to fall in love with nature

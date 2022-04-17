@@ -1,5 +1,5 @@
 import React from "react";
-import { MainButton } from "../MainButton";
+import { MainButton } from "../../../../../components/MainButton";
 import styles from "./styles.module.scss";
 
 interface ICard {

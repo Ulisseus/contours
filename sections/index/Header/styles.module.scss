@@ -1,5 +1,5 @@
-@import "../../styles/global/animations";
-@import "../../styles/global/typography";
+@import "../../../styles/global/animations";
+@import "../../../styles/global/typography";
 
 .header {
   position: relative;
@@ -9,7 +9,7 @@
       rgba(var(--primary-light-rgb), 0.8),
       rgba(var(--primary-dark-rgb), 0.8)
     ),
-    url("../../public/hero.jpg");
+    url("../../../public/hero.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);

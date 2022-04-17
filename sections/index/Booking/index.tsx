@@ -1,6 +1,6 @@
 import React from "react";
-import { FormField } from "../FormField";
-import { RadioButton } from "../RadioButton";
+import { FormField } from "../../../components/FormField";
+import { RadioButton } from "../../../components/RadioButton";
 import styles from "./styles.module.scss";
 
 export const Booking: React.FC = () => {
