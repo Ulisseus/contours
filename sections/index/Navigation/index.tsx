@@ -38,7 +38,7 @@ export const Navigation: React.FC = () => {
     <div className={styles.wrapper}>
       <input type="checkbox" id="nav-checkbox" className={styles.checkbox} />
       <label htmlFor="nav-checkbox" className={styles.label}>
-        Label
+        <span className={styles.icon}>&nbsp;</span>
       </label>
       <div className={styles.background}></div>
       <NavigationMenu items={NAVIGATION_MENU_ITEMS} />

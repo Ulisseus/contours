@@ -1,10 +1,22 @@
 .wrapper {
   .checkbox {
+    visibility: hidden;
     &:checked ~ .nav {
       visibility: visible;
     }
     &:checked ~ .background {
       transform: scale(100);
+    }
+    &:checked ~ .label > span {
+      background-color: transparent;
+      &::after {
+        transform: rotate(135deg);
+        top: 0;
+      }
+      &::before {
+        top: 0;
+        transform: rotate(-135deg);
+      }
     }
   }
   .label {
@@ -17,6 +29,15 @@
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(black, 0.2);
+    text-align: center;
+    &:hover {
+      & > span::before {
+        top: -1rem;
+      }
+      & > span::after {
+        top: 1rem;
+      }
+    }
   }
 
   .background {
@@ -32,6 +53,33 @@
     );
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+  }
+}
+
+.icon {
+  position: relative;
+  margin-top: 3.25rem;
+  cursor: pointer;
+  &,
+  &::before,
+  &::after {
+    width: 3rem;
+    height: 2px;
+    background-color: var(--color-grey-dark-1);
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  &::before {
+    top: -0.8rem;
+  }
+  &::after {
+    top: 0.8rem;
   }
 }
 
