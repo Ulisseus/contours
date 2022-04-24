@@ -8,7 +8,7 @@ interface IMainButtonProps {
   animated?: boolean;
   primary?: boolean;
 }
-//todo combine two buttons in on component
+//todo combine two button components into single component
 export const MainButton: React.FC<IMainButtonProps> = ({
   text,
   animated,

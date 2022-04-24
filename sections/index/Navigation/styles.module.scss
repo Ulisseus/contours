@@ -1,0 +1,29 @@
+.wrapper {
+  .checkbox {
+  }
+  .label {
+    background-color: white;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+  }
+
+  .background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(
+      var(--primary-light),
+      var(--primary-dark)
+    );
+    z-index: 1000;
+    transform: scale(100);
+  }
+}
