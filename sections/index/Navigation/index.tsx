@@ -1,9 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import {
-  INavigationMenuItem,
-  NavigationMenu,
-} from "./_components/NavigationMenu";
 
 const NAVIGATION_MENU_ITEMS: INavigationMenuItem[] = [
   { label: "About  contours" },
@@ -12,6 +8,30 @@ const NAVIGATION_MENU_ITEMS: INavigationMenuItem[] = [
   { label: "Stories" },
   { label: "Buy now" },
 ];
+
+interface INavigationMenuItem {
+  label: string;
+  href?: string;
+}
+interface INavigationMenuProps {
+  items: INavigationMenuItem[];
+}
+
+export const NavigationMenu: React.FC<INavigationMenuProps> = ({ items }) => {
+  return (
+    <nav className={styles.nav}>
+      <ul className={styles.list}>
+        {items.map((item, i) => (
+          <li className={styles.item}>
+            <a href={item.href || "#"} className={styles.link}>
+              <span>{`0${i + 1}`}</span> {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
 export const Navigation: React.FC = () => {
   return (
