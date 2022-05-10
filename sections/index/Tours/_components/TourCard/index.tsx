@@ -30,7 +30,7 @@ export const Card: React.FC<ICard> = ({ title, variant, listEntries }) => {
             <p className={styles.priceOnly}>only</p>
             <p className={styles.priceValue}>$2000</p>
           </div>
-          <MainButton url="#" text="Buy now!" />
+          <MainButton url="#popup" text="Buy now!" />
         </div>
       </div>
     </div>
