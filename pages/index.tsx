@@ -8,6 +8,7 @@ import { Stories } from "../sections/index/Stories";
 import { Booking } from "../sections/index/Booking";
 import { Footer } from "../sections/index/Footer";
 import { Navigation } from "../sections/index/Navigation";
+import { Popup } from "../sections/index/Popup";
 
 const DefaultPage: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const DefaultPage: React.FC = () => {
       <Head>
         <title>Contours</title>
       </Head>
+      <Popup />
       <Navigation />
       <Header />
       <About />

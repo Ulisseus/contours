@@ -1,0 +1,52 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(black, 0.8);
+  display: grid;
+  place-content: center;
+  z-index: 5000;
+  .content {
+    background-color: white;
+    overflow: hidden;
+    //height: 60vh;
+    width: 60vw;
+    box-shadow: 0 2rem 4rem rgba(black, 0.2);
+    border-radius: 3px;
+    .wrapper {
+      display: flex;
+    }
+  }
+}
+
+.contentLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  .image {
+    display: block;
+    width: 100%;
+  }
+}
+
+.contentRight {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+
+  p {
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid gainsboro;
+    hyphens: auto;
+  }
+}
+
+.button {
+  margin: 5rem auto 0 0;
+}

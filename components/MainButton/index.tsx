@@ -7,6 +7,7 @@ interface IMainButtonProps {
   url: string;
   animated?: boolean;
   primary?: boolean;
+  className?: string;
 }
 //todo combine two button components into single component
 export const MainButton: React.FC<IMainButtonProps> = ({
@@ -14,12 +15,14 @@ export const MainButton: React.FC<IMainButtonProps> = ({
   animated,
   url,
   primary,
+  className,
 }) => {
   return (
     <a
       className={cn(
         { [styles.animation]: animated, [styles.primary]: primary },
-        styles.button
+        styles.button,
+        className
       )}
       href={url}
     >
