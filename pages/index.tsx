@@ -16,7 +16,7 @@ const DefaultPage: React.FC = () => {
       <Head>
         <title>Contours</title>
       </Head>
-      <Popup />
+      <Popup closeHref="tours" />
       <Navigation />
       <Header />
       <About />

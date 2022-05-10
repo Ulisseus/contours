@@ -2,11 +2,18 @@ import React from "react";
 import { MainButton } from "../../../components/MainButton";
 import styles from "./styles.module.scss";
 
-export const Popup: React.FC = () => {
+interface IPopup {
+  closeHref?: string;
+}
+
+export const Popup: React.FC<IPopup> = ({ closeHref = "#" }) => {
   return (
-    <div className={styles.popup}>
+    <div className={styles.popup} id="popup">
       <div className={styles.content}>
-        <div className={styles.wrapper}>
+        <div className="d-flex">
+          <a href={`#${closeHref}`} className={styles.close}>
+            &times;
+          </a>
           <div className={styles.contentLeft}>
             <img src="/nat-8.jpg" alt="promo" className={styles.image} />
             <img src="/nat-9.jpg" alt="promo" className={styles.image} />

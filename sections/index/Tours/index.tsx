@@ -29,7 +29,7 @@ const LIST_ENTRIES = {
 
 export const Tours: React.FC = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id="tours">
       <div className="center-text mb-big">
         <h2 className="h-2 h-2_animated h-2_background">Most popular course</h2>
       </div>
