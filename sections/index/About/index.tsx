@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import cn from "classnames";
-import { TextButton } from "../../../components/TextButton";
+import { TextButton } from "components/TextButton";
 import { Composition } from "./_components/AboutComposition";
 
 export const About: React.FC = () => {

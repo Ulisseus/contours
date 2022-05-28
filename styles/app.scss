@@ -1,6 +1,6 @@
 @import "./utils/mixins";
-@import "./global/typography";
 @import "./global/base";
+@import "./global/typography";
 @import "./utils/variables";
 @import "./utils/utilites";
 
@@ -14,11 +14,30 @@
 
 html {
   //percentages instead of pixels allows user to override this value in his browser settings
+  //62.5% of 16px is 10px
   font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 55%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 45%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 70%;
+  }
 }
 
 body {
   padding: 3rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
   color: var(--text-color);
   background-color: var(--bg-color);
   box-sizing: border-box;

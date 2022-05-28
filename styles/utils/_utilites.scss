@@ -1,3 +1,4 @@
+@import "./mixins";
 .center-text {
   text-align: center;
 }
@@ -24,6 +25,11 @@
 
 .d-flex {
   display: flex;
+
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+  }
+
   & .col-1 {
     flex: 0.083 0 0;
   }
@@ -41,5 +47,11 @@
   }
   & .col-6 {
     flex: 0.5 0 0;
+  }
+
+  [class^="col-"] {
+    @include respond(tab-port) {
+      flex: 0 0 100%;
+    }
   }
 }
