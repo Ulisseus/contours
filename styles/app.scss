@@ -14,6 +14,7 @@
 
 html {
   //percentages instead of pixels allows user to override this value in his browser settings
+  //62.5% of 16px is 10px
   font-size: 62.5%;
 
   @include respond(tab-land) {
@@ -34,6 +35,9 @@ html {
 
 body {
   padding: 3rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
   color: var(--text-color);
   background-color: var(--bg-color);
   box-sizing: border-box;
