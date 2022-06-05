@@ -1,5 +1,13 @@
+@import "styles/utils/mixins";
 .wrapper {
   position: relative;
+  @include respond(tab-land) {
+    margin-top: 5rem;
+    min-height: 400px;
+  }
+  @include respond(phone) {
+    min-height: 250px;
+  }
   &:hover .photo:not(:hover) {
     transform: scale(0.9);
   }
@@ -10,8 +18,14 @@
   position: absolute;
   transition: all 0.2s;
   outline-offset: 2rem;
+  @include respond(tab-land) {
+    outline-offset: 1rem;
+  }
   &:hover {
     transform: scale(1.1) translateY(-5px);
+    @include respond(tab-land) {
+      transform: scale(1) translateY(-3px);
+    }
     box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
     z-index: 1000;
     outline: 1.5rem solid var(--primary-dark);
@@ -21,14 +35,22 @@
 
 .first {
   left: 0;
+  @include respond(tab-land) {
+    left: 5rem;
+    top: 0;
+  }
   top: -2rem;
 }
 .second {
   right: 0;
+  @include respond(tab-land) {
+    right: 5rem;
+  }
   top: 2rem;
 }
 
 .third {
   left: 20%;
+
   top: 10rem;
 }
