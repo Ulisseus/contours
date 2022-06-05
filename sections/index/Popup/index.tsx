@@ -1,5 +1,5 @@
 import React from "react";
-import { MainButton } from "components/MainButton";
+import { Button } from "components/Button";
 import styles from "./styles.module.scss";
 
 interface IPopup {
@@ -29,12 +29,7 @@ export const Popup: React.FC<IPopup> = ({ closeHref = "#" }) => {
               debitis, recusandae veritatis sunt dolores repellendus cumque in
               voluptatum ea nam fugiat adipisci.
             </p>
-            <MainButton
-              text="Book now"
-              url="#"
-              className={styles.button}
-              primary
-            />
+            <Button text="Book now" url="#" className={styles.button} primary />
           </div>
         </div>
       </div>

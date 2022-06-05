@@ -2,15 +2,14 @@ import React from "react";
 import styles from "./styles.module.scss";
 import cn from "classnames";
 
-interface IMainButtonProps {
+interface IButtonProps {
   text: string;
   url: string;
   animated?: boolean;
   primary?: boolean;
   className?: string;
 }
-//todo combine two button components into single component
-export const MainButton: React.FC<IMainButtonProps> = ({
+export const Button: React.FC<IButtonProps> = ({
   text,
   animated,
   url,

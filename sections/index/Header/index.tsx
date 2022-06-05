@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { MainButton } from "components/MainButton";
+import { Button } from "components/Button";
 
 export const Header: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
           <span className="h-1_main">Outdoors</span>
           <span className="h-1_sub">is where the life happens</span>
         </h1>
-        <MainButton text="Discover our tours" animated url="#" />
+        <Button text="Discover our tours" animated url="#" />
       </div>
     </header>
   );
