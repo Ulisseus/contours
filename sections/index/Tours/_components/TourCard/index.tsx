@@ -1,5 +1,5 @@
 import React from "react";
-import { MainButton } from "components/MainButton";
+import { Button } from "components/Button";
 import styles from "./styles.module.scss";
 
 interface ICard {
@@ -30,7 +30,7 @@ export const Card: React.FC<ICard> = ({ title, variant, listEntries }) => {
             <p className={styles.priceOnly}>only</p>
             <p className={styles.priceValue}>$2000</p>
           </div>
-          <MainButton url="#popup" text="Buy now!" />
+          <Button url="#popup" text="Buy now!" />
         </div>
       </div>
     </div>
