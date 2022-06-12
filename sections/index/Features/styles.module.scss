@@ -1,3 +1,4 @@
+@import "styles/utils/mixins";
 .features {
   padding: 20rem 0;
   background-image: linear-gradient(
@@ -16,5 +17,15 @@
 
 .cardWrapper {
   width: 80%;
+  @include respond(tab-port) {
+    width: 100%;
+  }
   margin: auto;
+  @media (max-width: 95rem) {
+    flex-wrap: wrap;
+    & > * {
+      width: 100%;
+      flex: 0 0 100% !important;
+    }
+  }
 }

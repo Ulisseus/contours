@@ -1,3 +1,4 @@
+@import "styles/utils/mixins";
 .wrapper {
   padding: 25rem 0 3rem;
   background-color: var(--color-grey-light-1);
@@ -7,4 +8,11 @@
 .columnWrapper {
   width: 80%;
   margin: auto;
+  @include respond(tab-land) {
+    flex-wrap: wrap;
+    & > * {
+      width: 100%;
+      flex: 0 0 100% !important;
+    }
+  }
 }
