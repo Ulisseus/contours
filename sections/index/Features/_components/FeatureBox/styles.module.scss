@@ -1,6 +1,10 @@
+@import "styles/utils/mixins";
 .featureBox {
   background-color: rgba(white, 0.8);
   padding: 2.5rem;
+  @include respond(phone) {
+    margin: 2rem 0;
+  }
   margin: 3rem;
   text-align: center;
   border-radius: 3px;
@@ -19,5 +23,8 @@
   }
   &:hover {
     transform: translateY(-1.5rem) scale(1.05);
+    @include respond(phone) {
+      transform: none;
+    }
   }
 }

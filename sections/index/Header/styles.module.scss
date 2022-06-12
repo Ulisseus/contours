@@ -1,5 +1,6 @@
 @import "styles/global/animations";
 @import "styles/global/typography";
+@import "styles/utils/mixins";
 
 .header {
   position: relative;
@@ -12,6 +13,12 @@
     url("../../../public/hero.jpg");
   background-size: cover;
   background-position: top;
+  @include respond(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+  }
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0% 100%);
+  }
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
   .logoBox {
     position: absolute;
