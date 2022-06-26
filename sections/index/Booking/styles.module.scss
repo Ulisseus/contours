@@ -1,3 +1,4 @@
+@import "styles/utils/mixins";
 .section {
   padding: 15rem 0;
   background-image: linear-gradient(
@@ -15,6 +16,21 @@
       transparent 50%
     ),
     url("/nat-10.jpg");
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        98deg,
+        rgba(white, 0.9) 0%,
+        rgba(white, 0.9) 60%,
+        transparent 60%
+      ),
+      url("/nat-10.jpg");
+  }
+  @include respond(phone) {
+    background: rgba(white, 0.9);
+    width: 95%;
+  }
+
   width: 80%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,6 +42,13 @@
   .form {
     width: 50%;
     padding: 6rem;
+    @include respond(tab-port) {
+      width: 60%;
+    }
+    @include respond(phone) {
+      width: 100%;
+      padding: 3rem;
+    }
   }
   .name {
     margin-bottom: 2rem;

@@ -1,3 +1,5 @@
+@import "styles/utils/mixins";
+
 .storyCard {
   width: 75%;
   margin: 0 auto;
@@ -10,6 +12,19 @@
   transform: skewX(-12deg);
   & > * {
     transform: skewX(12deg);
+  }
+  @include respond(tab-land) {
+    transform: skewX(-8deg);
+    & > * {
+      transform: skewX(8deg);
+    }
+  }
+  @include respond(phone) {
+    width: 95%;
+    transform: unset;
+    & > * {
+      transform: unset;
+    }
   }
   transition: all 0.2s;
   &:hover .caption {
@@ -30,6 +45,12 @@
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   transform: translateX(-3rem) skewX(12deg);
+  @include respond(tab-land) {
+    transform: translateX(-3rem) skewX(8deg);
+  }
+  @include respond(phone) {
+    transform: translateX(-3rem);
+  }
   position: relative;
 }
 

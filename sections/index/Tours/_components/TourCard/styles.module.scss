@@ -5,6 +5,16 @@
   position: relative;
   height: 52rem;
   margin: 3rem;
+  @include respond(tab-land) {
+    width: 70%;
+    margin: 3rem auto;
+  }
+  @include respond(tab-port) {
+    width: 85%;
+  }
+  @include respond(phone) {
+    width: 95%;
+  }
 
   &:hover .sideFront {
     transform: rotateY(-180deg);
