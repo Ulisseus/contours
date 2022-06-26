@@ -12,13 +12,19 @@
   & > * {
     transform: skewY(7deg);
   }
+  @include respond(tab-port) {
+    transform: skewY(-5deg);
+    & > * {
+      transform: skewY(5deg);
+    }
+  }
   margin-top: -11rem;
 }
 
 .cardWrapper {
   width: 80%;
   @include respond(tab-port) {
-    width: 100%;
+    width: 95%;
   }
   margin: auto;
   @media (max-width: 95rem) {
