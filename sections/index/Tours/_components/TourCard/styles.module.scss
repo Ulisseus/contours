@@ -11,6 +11,7 @@
   }
   @include respond(tab-port) {
     width: 85%;
+    height: auto;
   }
   @include respond(phone) {
     width: 95%;
@@ -18,10 +19,16 @@
 
   &:hover .sideFront {
     transform: rotateY(-180deg);
+    @include respond(tab-port) {
+      transform: none;
+    }
   }
 
   &:hover .sideBack {
     transform: rotateY(0);
+    @include respond(tab-port) {
+      transform: none;
+    }
   }
 }
 
@@ -37,6 +44,10 @@
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
   overflow: hidden;
+  @include respond(tab-port) {
+    height: auto;
+    position: relative;
+  }
 }
 
 .sideFront {
@@ -51,12 +62,21 @@
     rgba(var(--primary-light-rgb), 0.8),
     rgba(var(--primary-dark-rgb), 0.8)
   );
+  @include respond(tab-port) {
+    transform: none;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -4rem;
+  }
   &Content {
     display: grid;
     place-items: center;
     height: 100%;
     text-align: center;
     margin-bottom: 8rem;
+    @include respond(tab-port) {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
     .priceWrapper {
       color: white;
       .priceOnly {
@@ -75,6 +95,9 @@
   composes: sideBack;
   composes: side;
   opacity: 0.85;
+  @include respond(tab-port) {
+    opacity: 1;
+  }
   background-image: linear-gradient(
     to right bottom,
     var(--secondary-light),
@@ -194,6 +217,9 @@
     list-style: none;
     width: 80%;
     margin: auto;
+    @include respond(tab-port) {
+      padding-bottom: 5rem;
+    }
     li {
       text-align: center;
       font-size: 1.5rem;
