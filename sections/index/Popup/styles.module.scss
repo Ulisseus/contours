@@ -82,6 +82,9 @@
     column-gap: 4rem;
     column-rule: 1px solid gainsboro;
     hyphens: auto;
+    @include respond(tab-port) {
+      column-count: 1;
+    }
   }
 }
 
