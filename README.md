@@ -1,3 +1,3 @@
-**Practicing css**
+contours.vercel.app
 
-TODO - update readme.
+Build to practice various css techniques (from bem, to css modules and css in js and global utility styles).  
