@@ -2,6 +2,7 @@ import React from "react";
 import { StoryCard } from "./_components/StoryCard";
 import { TextButton } from "components/Link";
 import styles from "./styles.module.scss";
+import { BackgroundVideo } from "../../../components/BackgroundVideo";
 
 const LOREM = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fuga,
           harum velit facere aliquid veritatis error et mollitia, ex libero
@@ -16,6 +17,7 @@ const LOREM = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem f
 export const Stories: React.FC = () => {
   return (
     <section className={styles.stories}>
+      <BackgroundVideo url="./video.webm" />
       <div className="mb-big center-text">
         <h2 className="h-2 h-2_animated h-2_background">
           We make people genuinely happy
