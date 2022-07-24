@@ -30,7 +30,17 @@ export const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logoBox}>
-        <img src="/logo-green-2x.png" alt="logo" className={styles.logo} />
+        {/* in real a project I would use next.js Image component*/}
+        <picture>
+          <source
+            srcSet="/logo-green-small-1x.png 1x, /logo-green-small-2x.png 2x"
+            media="(max-width: 37.5rem)"
+          />
+          <img
+            srcSet="/logo-green-1x.png 1x, /logo-green-2x.png 2x"
+            alt="logo"
+          />
+        </picture>
       </div>
       <div className={cn(styles.info, "d-flex")}>
         <div className="col-6">
