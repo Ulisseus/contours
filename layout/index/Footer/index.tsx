@@ -42,6 +42,7 @@ export const Footer: React.FC = () => {
           />
         </picture>
       </div>
+
       <div className={cn(styles.info, "d-flex")}>
         <div className="col-6">
           <div className={styles.navigation}>
@@ -54,6 +55,9 @@ export const Footer: React.FC = () => {
         </div>
         <div className="col-6">
           <p className={styles.copyright}>Build for learning purposes</p>
+          <p className={styles.course}>
+            Part of Advanced CSS course by Jonas Schmedtmann
+          </p>
         </div>
       </div>
     </footer>
