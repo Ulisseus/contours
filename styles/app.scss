@@ -42,3 +42,8 @@ body {
   background-color: var(--bg-color);
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: var(--primary-mid);
+  color: white;
+}
